@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Inventory</title>
     <link rel="stylesheet" href="../styles/styles.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-        
+
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <ul>
-            <li><a href="../index.html">eToolBox</a></li>
-            <li><a href="../pages/customers.html"><img src="../images/customers.svg" alt="Customers">Customers</a></li>
-            <li><a href="../pages/inventory.html"><img src="../images/inventory.svg" alt="Inventory">Inventory</a></li>
-            <li><a href="../pages/services.html"><img src="../images/services.svg" alt="Services">Services</a></li>
-            <li><a href="../pages/pricing.html"><img src="../images/pricing.svg" alt="Pricing">Pricing</a></li>
+            <li><a href="../index.html">          <img src="../images/toolbox.svg" alt="Customers"> eToolBox</a></li>
+            <li><a href="../pages/customers.html"><img src="../images/customers.svg" alt="Customers"> Customers</a></li>
+            <li><a style="background-color: black;" href="../pages/inventory.html"><img src="../images/inventory.svg" alt="Inventory"> Inventory</a></li>
+            <li><a href="../pages/services.html"><img src="../images/services.svg" alt="Services"> Services</a></li>
+            <li><a href="../pages/pricing.html"><img src="../images/pricing.svg" alt="Pricing"> Pricing</a></li>
         </ul>
     </nav>
-<table class="table table-hover table-striped">
-  <thead class="table-dark">
-    <tr>
-      <th scope="col">SKU</th>
-      <th scope="col">Item</th>
-      <th scope="col">Description</th>
-      <th scope="col">Qty</th>
-      <th scope="col">Price</th>
-      <th scope="col">Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">01</th>
-      <td>Brake Pads</td>
-      <td>Tektro Ceramic</td>
-      <td>5</td>
-      <td>$30</td>
-      <td>$150</td>
-    </tr>
-    <tr>
-      <th scope="row">02</th>
-      <td>Brake Rotor</td>
-      <td>Tektro 180</td>
-      <td>4</td>
-      <td>$30</td>
-      <td>$120</td>
-    </tr>
-    <tr>
-      <th scope="row">03</th>
-      <td>Brake Caliper</td>
-      <td>TEKTRO MD-M300</td>
-      <td>3</td>
-      <td>$40</td>
-      <td>$120</td>
-    </tr>
-  </tbody>
-</table>
+    <table class="table table-hover table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">SKU</th>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">01</th>
+                <td>Brake Pads</td>
+                <td>Tektro Ceramic</td>
+                <td>5</td>
+                <td>$30</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <th scope="row">02</th>
+                <td>Brake Rotor</td>
+                <td>Tektro 180</td>
+                <td>4</td>
+                <td>$30</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <th scope="row">03</th>
+                <td>Brake Caliper</td>
+                <td>TEKTRO MD-M300</td>
+                <td>3</td>
+                <td>$40</td>
+                <td>$120</td>
+            </tr>
+        </tbody>
+    </table>
     <hr>
-    <div id="form">
+    <div class="form">
         <form>
             <h3>New Item</h3>
             <label for="item_SKU">SKU:</label>
@@ -81,4 +84,5 @@
         </form>
     </div>
 </body>
+
 </html>

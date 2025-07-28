@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Customers</title>
     <link rel="stylesheet" href="../styles/styles.css">
 
@@ -18,13 +18,14 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../index.html">eToolBox</a></li>
-            <li><a href="../pages/customers.html"><img src="../images/customers.svg" alt="Customers">Customers</a></li>
-            <li><a href="../pages/inventory.html"><img src="../images/inventory.svg" alt="Inventory">Inventory</a></li>
-            <li><a href="../pages/services.html"><img src="../images/services.svg" alt="Services">Services</a></li>
-            <li><a href="../pages/pricing.html"><img src="../images/pricing.svg" alt="Pricing">Pricing</a></li>
+            <li><a href="../index.html"><img src="../images/toolbox.svg" alt="Customers"> eToolBox</a></li>
+            <li><a style="background-color: black;" href="../pages/customers.html"><img src="../images/customers.svg" alt="Customers"> Customers</a></li>
+            <li><a href="../pages/inventory.html"><img src="../images/inventory.svg" alt="Inventory"> Inventory</a></li>
+            <li><a href="../pages/services.html"><img src="../images/services.svg" alt="Services"> Services</a></li>
+            <li><a href="../pages/pricing.html"><img src="../images/pricing.svg" alt="Pricing"> Pricing</a></li>
         </ul>
     </nav>
+    <div class="table">
     <table class="table table-hover table-striped">
         <thead class="table-dark">
             <tr>
@@ -63,31 +64,45 @@
             </tr>
         </tbody>
     </table>
-    <hr>
-    <div id="form">
-        <form>
-            <h3>New Customer</h3>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br>
+    </div>
+    <div class="form">
+        <p class="newcustomer">
+            <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample">
+                New Customer
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br>
 
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
 
-            <label for="lname">Phone:</label>
-            <input type="tel" id="phone" name="phone"><br>
+                    <label for="lname">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br>
 
-            <label for="lname">Email:</label>
-            <input type="email" id="email" name="email"><br>
+                    <label for="lname">Email:</label>
+                    <input type="email" id="email" name="email"><br>
 
-            <label for="bike">Bike:</label>
-            <select name="bike" id="bike">
-                <option value="" disabled selected>-- Select One --</option>
-                <option value="radRunner">RadRunner</option>
-                <option value="radWagon">RadWagon</option>
-                <option value="radRover">RadRover</option>
-            </select><br>
-            <input type="submit" value="Submit">
-        </form>
+                    <label for="bike">Bike:</label>
+                    <select name="bike" id="bike">
+                        <option value="" disabled selected>-- Select One --</option>
+                        <option value="radRunner">RadRunner</option>
+                        <option value="radWagon">RadWagon</option>
+                        <option value="radRover">RadRover</option>
+                    </select><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
