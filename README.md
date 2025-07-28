@@ -41,5 +41,5 @@ The goal of this project is to help small bike shops and side-hustlers like myse
 - ✅ Use at least two CSS animations.
 
 ## Deliverables
-- <a href="https://github.com/hallanbatman/Capstone">Project’s repository GitHub link.</a> 
-- <a href="https://github.com/hallanbatman">My GitHub account.</a>
+- <a href="https://github.com/hallanbatman/Capstone" target="_blank">Project’s repository GitHub link.</a> 
+- <a href="https://github.com/hallanbatman" target="_blank">My GitHub account.</a>
