@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">eToolBox</a></li>
+            <li><a href="../pages/customers.html"><img src="../images/customers.svg" alt="Customers">Customers</a></li>
+            <li><a href="../pages/inventory.html"><img src="../images/inventory.svg" alt="Inventory">Inventory</a></li>
+            <li><a href="../pages/services.html"><img src="../images/services.svg" alt="Services">Services</a></li>
+            <li><a href="../pages/pricing.html"><img src="../images/pricing.svg" alt="Pricing">Pricing</a></li>
+        </ul>
+    </nav>
+    <table class="table table-hover table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th scope="col">Bike</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">01</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>000.000.0000</td>
+                <td>Mark.Otto@email.com</td>
+                <td>RadRunner</td>
+            </tr>
+            <tr>
+                <th scope="row">02</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>000.000.0000</td>
+                <td>Jacob.Thornton@email.com</td>
+                <td>RadWagon</td>
+            </tr>
+            <tr>
+                <th scope="row">03</th>
+                <td>John</td>
+                <td>Doe</td>
+                <td>000.000.0000</td>
+                <td>John.Doe@email.com</td>
+                <td>RadRover</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <div id="form">
+        <form>
+            <h3>New Customer</h3>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="lname">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <label for="lname">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="bike">Bike:</label>
+            <select name="bike" id="bike">
+                <option value="" disabled selected>-- Select One --</option>
+                <option value="radRunner">RadRunner</option>
+                <option value="radWagon">RadWagon</option>
+                <option value="radRover">RadRover</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

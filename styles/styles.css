@@ -1,0 +1,49 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100;
+}
+
+#about{
+  margin: 20px;
+}
+
+ul {
+display: flex;
+list-style-type: none;
+margin: 0;
+padding-left: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+nav ul li img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 10px 15px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+#form{
+  margin:20px;
+  align-items:flex-end;
+}
